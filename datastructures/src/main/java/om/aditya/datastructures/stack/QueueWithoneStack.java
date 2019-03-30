@@ -6,21 +6,21 @@ public class QueueWithoneStack<T> {
 
     ArrayStack<T> s = new ArrayStack<T>();
 
-    public void Enqueu(T e) {
+    public void enqueu(T e) {
 
         s.push(e);
         System.out.println("pushed->" +e);
     }
 
 
-    public T Dequeu() {
+    public T dequeu() {
 
         if(s.isEmpty()) throw new IndexOutOfBoundsException("Empty Queue....");
         if(s.size() == 1) return s.pop() ;
         else {
 
             T temp = s.pop() ;
-            T lastEle = Dequeu();
+            T lastEle = dequeu();
             s.push(temp);
             return lastEle;
         }

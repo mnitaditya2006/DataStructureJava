@@ -5,21 +5,21 @@ public class TestStack {
     public static void main(String[] args) {
 
 
-        QueueWithoneStack<String> queue = new QueueWithoneStack<String>();
-        queue.Enqueu("first");
-        queue.Enqueu("second");
-        queue.Enqueu("tird");
-        queue.Enqueu("forth");
-        System.out.println("dequeued-> " +queue.Dequeu());
-        System.out.println("dequeued-> " +queue.Dequeu());
-        System.out.println("dequeued-> " +queue.Dequeu());
-        queue.Enqueu("5th");
-        queue.Enqueu("6th");
-        System.out.println("dequeued-> " +queue.Dequeu());
-        System.out.println("dequeued-> " +queue.Dequeu());
-        System.out.println("dequeued-> " +queue.Dequeu());
-        System.out.println("dequeued-> " +queue.Dequeu());
-        System.out.println("dequeued-> " +queue.Dequeu());
+        QueueUsingTwoStacks<String> queue = new QueueUsingTwoStacks<String>();
+        queue.enqueu("first");
+        queue.enqueu("second");
+        queue.enqueu("tird");
+        queue.enqueu("forth");
+        System.out.println("dequeued-> " +queue.dequeu());
+        System.out.println("dequeued-> " +queue.dequeu());
+        System.out.println("dequeued-> " +queue.dequeu());
+        queue.enqueu("5th");
+        queue.enqueu("6th");
+        System.out.println("dequeued-> " +queue.dequeu());
+        System.out.println("dequeued-> " +queue.dequeu());
+        System.out.println("dequeued-> " +queue.dequeu());
+        System.out.println("dequeued-> " +queue.dequeu());
+        System.out.println("dequeued-> " +queue.dequeu());
 
         FindBracketBalance f = new FindBracketBalance();
         if( f.checkBalanceBruteForce() ) System.out.println("balanced expression"); else System.out.println("Not balanced expression");; ;
