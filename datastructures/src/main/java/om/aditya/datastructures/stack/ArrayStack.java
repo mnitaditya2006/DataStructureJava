@@ -11,13 +11,13 @@ public class ArrayStack<E> implements Stack<E> {
     
 	public void push(E item) {
 	
-	 	items.add(top,item);
+	 	items.add(top++,item);
 		count++;
 	}
 
 	public E pop() {
 		// TODO Auto-generated method stub
-		E data = items.get(top);
+		E data = items.get(top-1);
 		top = top-1;
 		count--;
 		return data;

@@ -37,4 +37,28 @@ public class BinaryTree<E> implements Tree<E> {
     }
 
 
+    public void preOrderTraversal(TreeNode<E> root) {
+
+        if(root != null) {
+            preOrderTraversal(root.leftNode);
+            preOrderTraversal(root.rightNode);
+            System.out.println(root);
+
+
+        }
+    }
+
+    public void postOrderTraversal(TreeNode<E> root) {
+
+        if(root != null) {
+            System.out.println(root);
+            postOrderTraversal(root.leftNode);
+            postOrderTraversal(root.rightNode);
+
+
+        }
+    }
+
+
+
 }

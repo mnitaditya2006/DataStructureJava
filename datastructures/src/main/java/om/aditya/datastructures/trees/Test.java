@@ -16,6 +16,8 @@ public class Test {
         bst.addNode(new TreeNode<String>(13, "aditya"));
 
         bst.inOrderTraversal(bst.root);
+        bst.preOrderTraversal(bst.root);
+        bst.inOrderTraversal(bst.root);
 
     }
 }
